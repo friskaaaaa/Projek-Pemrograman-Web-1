@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko SWEETLOAF BAKERY</title>
+    <link rel="stylesheet" href="css/roti.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h2>SWEETLOAF BAKERY</h2>
+            <p>"Nikmati Kelezatan Roti yang Dibuat Dengan Cinta di SWEETLOAF BAKERY"</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#promo">Promo</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#harga">Harga</a></li>
+            <li><a href="#order">Pesan</a></li>
+            <li><a href="#profile">Profil Usaha</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#developer">Pengembang</a></li>
+        </ul>
+    </nav>
+
+    <section id="promo" class="promo">
+        <div class="container">
+            <h2>Promo Spesial!</h2>
+            <p>Diskon hingga 20% untuk semua produk roti ini. Ayo buruan!</p>
+            <div class="menu-list">
+                <div class="menu-promo">
+                    <img src="rotitawar.jpg" alt="Roti tawar" width="1000" height="500">
+                    <h3>Roti Tawar</h3>
+                    <span style="text-decoration: line-through;">Dari Rp.27.000</span>
+                    <h3>Jadi Rp.21.600</h3>
+                </div>
+                <div class="menu-promo">
+                    <img src="rotikeju.jpg" alt="Boti keju">
+                    <h3>Bolu Keju</h3>
+                    <span style="text-decoration: line-through;">Dari Rp.45.000</span>
+                    <h3>Jadi Rp.36.000</h3>
+                </div>
+                <div class="menu-promo">
+                    <img src="croisant.jpg" alt="Croissant">
+                    <h3>Croissant</h3>
+                    <span style="text-decoration: line-through;">Dari Rp.25.000</span>
+                    <h3>Jadi 20.000</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>MENU SWEETLOAF BAKERY</h2>
+            <div class="menu-list">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 7</div>
+                      <img src="roticoklat.jpg" style="width: 200px;">
+                      <div class="text">Roti Coklat</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 7</div>
+                      <img src="rotikeju.jpg" style="width:200px">
+                      <div class="text">Bolu Keju</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 7</div>
+                      <img src="rotipisangcoklat.jpg" style="width:200px">
+                      <div class="text">Roti Pisang Coklat</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 7</div>
+                      <img src="rotitawar.jpg" style="width:200px">
+                      <div class="text">Roti Tawar</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 7</div>
+                      <img src="rotigandum.jpg" style="width:200px;">
+                      <div class="text">Roti Gandum</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">6 / 7</div>
+                      <img src="croisant.jpg" style="width:200px">
+                      <div class="text">Croissant</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">7 / 7</div>
+                      <img src="jajananpasar.jpg" style="width:200px">
+                      <div class="text">1 Paket Jajanan Pasar</div>
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+                        
+                        function showSlides() {
+                          let i;
+                          let slides = document.getElementsByClassName("mySlides");
+                          let dots = document.getElementsByClassName("dot");
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                          }
+                          slideIndex++;
+                          if (slideIndex > slides.length) {slideIndex = 1}    
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                          setTimeout(showSlides, 2000);
+                        }
+                        </script>
+                        
+                        
+    </section>
+
+    <section id="harga" class="harga">
+        <div class="container">
+            <h2>Harga</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produk</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Roti Coklat</td>
+                        <td>Rp 50.000</td>
+                    </tr>
+                    <tr>
+                        <td>Bolu Keju</td>
+                        <td>Rp 45.000</td>
+                    </tr>
+                    <tr>
+                        <td>Roti Tawar</td>
+                        <td>Rp 27.000</td>
+                    </tr>
+                    <tr>
+                        <td>Roti Gandum</td>
+                        <td>Rp 80.000</td>
+                    </tr>
+                    <tr>
+                        <td>Croissant</td>
+                        <td>Rp 25.000</td>
+                    </tr>
+                    <tr>
+                        <td>1 Paket Jajanan Pasar</td>
+                        <td>Rp 270.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Pesan Sekarang</h2>
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="alamat">Alamat:</label>
+                <input type="alamat" id="alamat" name="alamat">
+                <label for="instruction">Delivery Intruction:</label>
+                <textarea name="instruction" id="instruction"placeholder= "No More Than 400 Character"></textarea><br>
+                <label for="product">Pilih Produk:</label>
+                <select id="product" name="product">
+                    <option value="roticoklat">Roti Coklat</option>
+                    <option value="bolukeju">Bolu Keju</option>
+                    <option value="rotitawar">Roti Tawar</option>
+                    <option value="rotigandum">Roti Gandum</option>
+                    <option value="croissant">Croissant</option>
+                    <option value="1paketjajananpasar">1 Paket Jajanan Pasar</option>
+                </select>
+                <label for="quantity">Jumlah:</label>
+                <input type="number" id="quantity" name="quantity" required>
+                <button type="submit">Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="profile" class="profile">
+        <div class="container">
+            <h2>PROFIL SWEETLOAF BAKERY</h2>
+            <img src="logo.png" height="250px" alt="logo toko">
+            <p>Usaha UMKM roti ini didirikan dengan tujuan menyediakan roti berkualitas, lezat, dan terjangkau untuk masyarakat. Berfokus pada kebutuhan konsumen, usaha ini mengutamakan penggunaan bahan baku terbaik dengan metode pembuatan yang higienis dan modern.
+                Memberikan pilihan makanan yang sehat, segar, dan berkualitas.
+                Mendukung pertumbuhan ekonomi lokal dengan menciptakan lapangan kerja.
+                Menjadi alternatif pilihan roti lokal yang kompetitif dibandingkan produk roti pabrikan.</p>
+            <p>Usaha ini dimulai pada tahun 2024 oleh Juliana Friska Fahrudi dengan pengalaman di bidang kuliner selama 5 tahun. Berawal dari usaha rumahan, kini telah berkembang menjadi usaha yang berkembang.</p>
+            <p><strong>Visi: </strong></p>
+                Menjadi produsen roti lokal yang dikenal karena kualitas, rasa, dan inovasi produk yang mampu memenuhi kebutuhan konsumen dari berbagai kalangan.
+            <p><strong>Misi: </strong></p>
+                Menggunakan bahan-bahan alami berkualitas tinggi untuk menghasilkan roti yang sehat dan lezat.
+                Memberikan layanan yang ramah dan cepat kepada pelanggan.
+                Mengembangkan produk yang inovatif sesuai selera pasar.
+                Mendukung keberlanjutan dengan mengurangi penggunaan plastik dalam kemasan.
+                </p>
+            <p><strong>Produk dan Keunggulan</strong></p>
+                <strong>Jenis Produk: </strong><br>
+                Roti Manis varian rasa: cokelat, keju, pisang coklat <br>
+                Roti Tawar : biasa dan gandum <br>
+                Croissant <br>
+                Roti Tradisional <br>
+                <strong>Keunggulan: </strong><br>
+                Menggunakan bahan alami tanpa pengawet.
+                Harga yang kompetitif dan terjangkau.
+                Produk selalu fresh dari dapur setiap hari.
+                Tersedia layanan pesan antar untuk memudahkan pelanggan.</p>
+            <p><strong>Strategi Pengembangan Usaha</strong></p>
+                Pemasaran: Menggunakan media sosial Instagram, TikTok, WhatsApp dan platform online Shopee, Tokopedia, Gojek, Grab. <br>
+                Inovasi Produk: Rutin mengembangkan varian baru sesuai tren pasar. <br>
+                Kerjasama: Bekerja sama dengan kafe, sekolah, dan toko-toko lokal untuk distribusi produk. <br>
+                Pelatihan Karyawan: Memberikan pelatihan agar karyawan memahami teknik produksi roti dan standar kebersihan.</p>
+                <p><strong>Komitmen:</strong</p>
+                Sebagai pengembang, Juliana Friska Fahrudi berkomitmen untuk terus belajar, berinovasi, dan mendengar kebutuhan pelanggan demi membawa UMKM ini menjadi pilihan utama konsumen.</p>
+        </div>
+    </section>
+
+    <section id="login" class="login">
+        <div class="container">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="social">
+        <div class="container">
+            <h2>Ikuti Kami</h2>
+            <p>
+                <a href="@SweetloafBakery">Instagram</a> |
+                <a href="@SweetloafBakery">TikTok</a> |
+                <a href="083893011118">Whatsapp</a> |
+                <a href="SweetloafBakery">Shopee</a> |
+                <a href="SweetloafBakery">Tokopedia</a> |
+                <a href="SweetloafBakery">Gojek</a> |
+                <a href="SweetloafBakery">Grab</a> |
+            </p>
+        </div>
+    </footer>
+    
+    <section id="developer" class="developer">
+        <div class="container">
+            <h2>Profil Pengembang</h2>
+                <p>Nama Usaha: Sweetloaf Bakery <br>
+                    Jenis Usaha: Produksi dan Penjualan Roti <br>
+                    Alamat Usaha: Jl. awan manis No.20 <br>
+                    Nomor Telepon/WhatsApp: 083893011118 <br>
+                    Email: SweetloafBakery@gmail.com <br>
+                    Media Sosial: @SweetloafBakery</p>
+        <footer class="footer">
+            <p>&copy; 2024 SWEETLOAF BAKERY. All Rights Reserved.</p>
+        </footer>
+        </div>
+    </section>
+</body>
+</html>

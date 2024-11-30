@@ -1,0 +1,168 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: radial-gradient(#8b4513, #fff0f5);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.navbar {
+    background: #d2b48c;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.promo {
+    text-align: center;
+    background: radial-gradient(#a0522d, #fff0f5);
+    padding: 50px 50px;
+}
+
+.menu-promo {
+    background: #deb887;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-promo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu {
+    background: radial-gradient(#a0522d, #fff0f5);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background: #deb887;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+table, th, td {
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.profile,
+.harga,
+.order,
+.login,
+.developer {
+    padding: 50px 20px;
+    background: radial-gradient(#ffb6c1, #fff0f5);
+    text-align: center;
+}
+
+footer {
+    background: #db7093;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
